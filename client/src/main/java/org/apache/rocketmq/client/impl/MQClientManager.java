@@ -45,12 +45,23 @@ public class MQClientManager {
     }
 
     public MQClientInstance getAndCreateMQClientInstance(final ClientConfig clientConfig, RPCHook rpcHook) {
+    	/**
+    	 * zl07499 获取clentid，格式为 ip@instancename（pid）@unitName
+    	 */
         String clientId = clientConfig.buildMQClientId();
+        
+        /**
+         * zl07499 从ConcurrentMap中获取MQClientInstance
+         */
         MQClientInstance instance = this.factoryTable.get(clientId);
         if (null == instance) {
             instance =
                 new MQClientInstance(clientConfig.cloneClientConfig(),
                     this.factoryIndexGenerator.getAndIncrement(), clientId, rpcHook);
+            /**
+             * zl07499 putIfAbsent()方法用于在map中进行添加。这个方法以要添加到ConcurrentMap中的键的值为参数，就像普通的put()方法，但是只有在map不包含这个键时，才能将键加入到map中。
+             * 如果map已经包含这个键，那么这个键的现有值就会保留。putIfAbsent()方法是原子的。
+             */
             MQClientInstance prev = this.factoryTable.putIfAbsent(clientId, instance);
             if (prev != null) {
                 instance = prev;

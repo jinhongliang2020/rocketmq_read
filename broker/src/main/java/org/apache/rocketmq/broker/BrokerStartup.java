@@ -100,7 +100,7 @@ public class BrokerStartup {
 
             final BrokerConfig brokerConfig = new BrokerConfig();
             
-            brokerConfig.setRocketmqHome("G://S_MQ//rocketMq//rocketmq-master//rocketmq-master//distribution");
+//            brokerConfig.setRocketmqHome("G://S_MQ//rocketMq//rocketmq-master//rocketmq-master//distribution");
             
             final NettyServerConfig nettyServerConfig = new NettyServerConfig();
             final NettyClientConfig nettyClientConfig = new NettyClientConfig();
@@ -108,6 +108,10 @@ public class BrokerStartup {
             nettyClientConfig.setUseTLS(Boolean.parseBoolean(System.getProperty(TLS_ENABLE,
                 String.valueOf(TlsSystemConfig.tlsMode == TlsMode.ENFORCING))));
             nettyServerConfig.setListenPort(10911);
+            
+            /**
+             * zl07499 mq消息 持久化配置
+             */
             final MessageStoreConfig messageStoreConfig = new MessageStoreConfig();
 
             if (BrokerRole.SLAVE == messageStoreConfig.getBrokerRole()) {
@@ -115,6 +119,9 @@ public class BrokerStartup {
                 messageStoreConfig.setAccessMessageInMemoryMaxRatio(ratio);
             }
 
+            /**
+             * zl07499 根据cmd指令，配置config
+             */
             if (commandLine.hasOption('c')) {
                 String file = commandLine.getOptionValue('c');
                 if (file != null) {

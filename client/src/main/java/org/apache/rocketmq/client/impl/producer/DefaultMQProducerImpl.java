@@ -143,14 +143,27 @@ public class DefaultMQProducerImpl implements MQProducerInner {
             case CREATE_JUST:
                 this.serviceState = ServiceState.START_FAILED;
 
+                /**
+                 * zl07499 1）使用正则判断消费者组名是否有特殊字符  2）是否与默认消费组（DEFAULT_PRODUCER）重名
+                 */
                 this.checkConfig();
 
+                /**
+                 * 获取该进程的pid，当作 该 producer实例的名称
+                 */
                 if (!this.defaultMQProducer.getProducerGroup().equals(MixAll.CLIENT_INNER_PRODUCER_GROUP)) {
                     this.defaultMQProducer.changeInstanceNameToPID();
                 }
 
+                /**
+                 * zl07499 获取 MQClientInstance
+                 * MQClientInstance作为与MQ交互的实例，一般来说一个jvm只有一个，参见clientId，它包含了topic路由信息，broker地址信息等，同时负责启动通信服务和定时任务等等。
+                 */
                 this.mQClientFactory = MQClientManager.getInstance().getAndCreateMQClientInstance(this.defaultMQProducer, rpcHook);
 
+                /**
+                 * zl07499 将本producer实例注册到MQClientInstance上
+                 */
                 boolean registerOK = mQClientFactory.registerProducer(this.defaultMQProducer.getProducerGroup(), this);
                 if (!registerOK) {
                     this.serviceState = ServiceState.CREATE_JUST;

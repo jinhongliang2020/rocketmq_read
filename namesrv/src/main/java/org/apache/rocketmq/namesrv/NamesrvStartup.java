@@ -51,6 +51,13 @@ public class NamesrvStartup {
 		try {
 			// PackageConflictDetect.detectFastjson();
 
+			/**
+			 * zl07499 Apache Commons CLI 开发命令行工具
+			 * https://www.ibm.com/developerworks/cn/java/j-lo-commonscli/
+			 * 
+			 * Option 三个参数，第一个参数设定这个 option 的单字符名字，第二个参数指明这个 option
+			 * 是否需要输入数值，第三个参数是对这个 option 的简要描述。
+			 */
 			Options options = ServerUtil.buildCommandlineOptions(new Options());
 			commandLine = ServerUtil.parseCmdLine("mqnamesrv", args, buildCommandlineOptions(options),
 					new PosixParser());
@@ -61,11 +68,11 @@ public class NamesrvStartup {
 
 			final NamesrvConfig namesrvConfig = new NamesrvConfig();
 
-			namesrvConfig.setRocketmqHome("G://S_MQ//rocketMq//rocketmq-master//rocketmq-master//distribution");
+//			namesrvConfig.setRocketmqHome("G://S_MQ//rocketMq//rocketmq-master//rocketmq-master//distribution");
 
 			final NettyServerConfig nettyServerConfig = new NettyServerConfig();
 			nettyServerConfig.setListenPort(9876);
-			
+
 			/**
 			 * zl07499 根据指令输入的地址，设置config，没有指定则用默认的配置
 			 */
@@ -75,6 +82,10 @@ public class NamesrvStartup {
 					InputStream in = new BufferedInputStream(new FileInputStream(file));
 					properties = new Properties();
 					properties.load(in);
+					
+					/**
+					 * zl07499 打印配置信息
+					 */
 					MixAll.properties2Object(properties, namesrvConfig);
 					MixAll.properties2Object(properties, nettyServerConfig);
 
@@ -91,6 +102,9 @@ public class NamesrvStartup {
 				System.exit(0);
 			}
 
+			/**
+			 * zl07499 将命令行指令转换成config （使用反射）
+			 */
 			MixAll.properties2Object(ServerUtil.commandLine2Properties(commandLine), namesrvConfig);
 
 			if (null == namesrvConfig.getRocketmqHome()) {
@@ -100,6 +114,10 @@ public class NamesrvStartup {
 				System.exit(-2);
 			}
 
+			/**
+			 * zl07499 配置logback的配置信息，
+			 * JoranConfigurator 用于重新定位配置文件的xml，否则就是用默认 ：https://www.cnblogs.com/h--d/p/5671528.html
+			 */
 			LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
 			JoranConfigurator configurator = new JoranConfigurator();
 			configurator.setContext(lc);
