@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\srvutil\src\main\java\org\apache\rocketmq\srvutil\ServerUtil.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\srvutil\src\main\java\org\apache\rocketmq\srvutil\ShutdownHookThread.java">
+</file>
+</checkstyle>

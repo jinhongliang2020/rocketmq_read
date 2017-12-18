@@ -1,0 +1,16 @@
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\impl\consumer\ProcessQueueTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\consumer\DefaultMQPushConsumerTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\consumer\store\LocalFileOffsetStoreTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\impl\factory\MQClientInstanceTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\producer\DefaultMQProducerTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\ValidatorsTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\consumer\store\RemoteBrokerOffsetStoreTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\common\ThreadLocalIndexTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\log\ClientLoggerTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\consumer\DefaultMQPullConsumerTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\producer\selector\SelectMessageQueueByHashTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\impl\consumer\RebalancePushImplTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\latency\LatencyFaultToleranceImplTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\impl\consumer\DefaultMQPushConsumerImplTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\impl\MQClientAPIImplTest.java
+G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\client\src\test\java\org\apache\rocketmq\client\consumer\rebalance\AllocateMessageQueueConsitentHashTest.java

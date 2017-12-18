@@ -1,0 +1,17 @@
+org\apache\rocketmq\broker\filter\ConsumerFilterManagerTest.class
+org\apache\rocketmq\broker\filter\MessageStoreWithFilterTest$2.class
+org\apache\rocketmq\broker\BrokerStartupTest.class
+org\apache\rocketmq\broker\client\ProducerManagerTest.class
+org\apache\rocketmq\broker\filter\MessageStoreWithFilterTest$3.class
+org\apache\rocketmq\broker\latency\BrokerFastFailureTest$1.class
+org\apache\rocketmq\broker\latency\BrokerFastFailureTest.class
+org\apache\rocketmq\broker\processor\SendMessageProcessorTest$2.class
+org\apache\rocketmq\broker\processor\SendMessageProcessorTest$1.class
+org\apache\rocketmq\broker\processor\ClientManageProcessorTest.class
+org\apache\rocketmq\broker\processor\PullMessageProcessorTest$1.class
+org\apache\rocketmq\broker\filter\MessageStoreWithFilterTest.class
+org\apache\rocketmq\broker\processor\SendMessageProcessorTest.class
+org\apache\rocketmq\broker\filter\CommitLogDispatcherCalcBitMapTest.class
+org\apache\rocketmq\broker\filter\MessageStoreWithFilterTest$1.class
+org\apache\rocketmq\broker\BrokerControllerTest.class
+org\apache\rocketmq\broker\processor\PullMessageProcessorTest.class

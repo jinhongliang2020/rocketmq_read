@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: rocketmq-filter 4.2.0-SNAPSHOT
+Implementation-Version: 4.2.0-SNAPSHOT
+Built-By: zl07499
+Specification-Vendor: Apache Software Foundation
+Specification-Title: rocketmq-filter 4.2.0-SNAPSHOT
+Implementation-Vendor-Id: org.apache.rocketmq
+Build-Jdk: 1.8.0_151
+Specification-Version: 4.2
+Implementation-URL: http://rocketmq.apache.org/rocketmq-filter/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Apache Software Foundation
+

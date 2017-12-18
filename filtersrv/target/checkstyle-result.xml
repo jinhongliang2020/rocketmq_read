@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\DynaCode.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\FilterClassFetchMethod.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\FilterClassInfo.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\FilterClassLoader.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\FilterClassManager.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\filter\HttpFilterClassFetchMethod.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\FilterServerOuterAPI.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\FiltersrvConfig.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\FiltersrvController.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\FiltersrvStartup.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\processor\DefaultRequestProcessor.java">
+</file>
+<file name="G:\S_MQ\rocketMq\rocketmq-master\rocketmq-master\filtersrv\src\main\java\org\apache\rocketmq\filtersrv\stats\FilterServerStatsManager.java">
+</file>
+</checkstyle>

@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+rocketmq-common 4.2.0-SNAPSHOT
+
+
+From: 'Alibaba Group' (https://github.com/alibaba)
+  - fastjson (https://github.com/alibaba/fastjson) com.alibaba:fastjson:jar:1.2.29
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - rocketmq-remoting 4.2.0-SNAPSHOT (http://rocketmq.apache.org/rocketmq-remoting/) org.apache.rocketmq:rocketmq-remoting:jar:4.2.0-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.7
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Netty Project' (http://netty.io/)
+  - Netty/All-in-One (http://netty.io/netty-all/) io.netty:netty-all:jar:4.0.42.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/TomcatNative [OpenSSL - Dynamic] (https://github.com/netty/netty-tcnative/netty-tcnative/) io.netty:netty-tcnative:jar:1.1.33.Fork22
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+
